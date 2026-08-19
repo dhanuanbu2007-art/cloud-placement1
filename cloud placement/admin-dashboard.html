@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <header class="dashboard-header">
+
+            <h1>Placement Admin Dashboard</h1>
+
+            <button
+                class="logout-btn"
+                id="logoutBtn"
+            >
+                Logout
+            </button>
+
+        </header>
+
+
+        <main class="dashboard-content">
+
+            <div class="welcome">
+
+                <h2>Placement Officer Dashboard</h2>
+
+                <p>
+                    Manage students, companies, jobs and applications.
+                </p>
+
+            </div>
+
+
+            <div class="card-container">
+
+                <div class="card">
+
+                    <h3>Total Students</h3>
+
+                    <p id="studentCount">
+                        0
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>Total Companies</h3>
+
+                    <p id="companyCount">
+                        0
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>Total Jobs</h3>
+
+                    <p id="jobCount">
+                        0
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>Applications</h3>
+
+                    <p id="applicationCount">
+                        0
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="section">
+
+                <h2>All Placement Jobs</h2>
+
+                <div id="jobsContainer">
+
+                    <p>Loading...</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="section">
+
+                <h2>Student Applications</h2>
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Student</th>
+                                <th>Company</th>
+                                <th>Job</th>
+                                <th>Status</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="applicationsTable">
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script type="module" src="JS/admin.js"></script>
+
+</body>
+
+</html>
